@@ -1,0 +1,149 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fffaf7;
+    color: #3d2923;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal de la página de producto */
+.detalle-producto {
+    padding: 40px 10%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Icono grande del producto */
+.producto-imagen-grande {
+    font-size: 80px;
+    text-align: center;
+    background-color: #f7e4d6;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+/* Títulos principales */
+.detalle-producto h1 {
+    font-size: 36px;
+    color: #3d2923;
+    margin-bottom: 5px;
+}
+
+.detalle-producto h2 {
+    font-size: 22px;
+    color: #d2693c;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f7e4d6;
+    padding-bottom: 5px;
+}
+
+/* Línea separadora */
+hr {
+    border: 0;
+    height: 1px;
+    background: #f7e4d6;
+    margin: 25px 0;
+}
+
+
+/* =========================================
+   SECCIÓN DE STOCK Y DISPONIBILIDAD
+   ========================================= */
+
+.stock-box {
+    background-color: #ffffff;
+    border: 2px solid #3ca65c;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.estado-disponible {
+    color: #3ca65c;
+    font-weight: 700;
+}
+
+.lista-stock {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.lista-stock li {
+    background-color: #fffaf7;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   CREADOR / PERSONA FANTASIOSA
+   ========================================= */
+
+.autor-box {
+    background-color: #fff1e8;
+    border-left: 5px solid #d2693c;
+    padding: 18px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.autor-box p {
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   LISTAS DE CARACTERÍSTICAS Y PASOS
+   ========================================= */
+
+.lista-caracteristicas {
+    padding-left: 20px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.lista-pasos {
+    padding-left: 20px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.lista-pasos li {
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   BOTÓN DE ACCIÓN / RESERVA
+   ========================================= */
+
+.contenedor-boton {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-reserva {
+    border: none;
+    padding: 15px 30px;
+    background-color: #d2693c;
+    color: white;
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-reserva:hover {
+    background-color: #b8522c;
+    transform: translateY(-2px);
+}
