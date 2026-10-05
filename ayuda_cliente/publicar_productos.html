@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Publicá un producto artesanal en Dulce Conexión.">
+    <title>Publicar un producto | Dulce Conexión</title>
+    <link rel="stylesheet" href="publicar_productos.css">
+</head>
+<body>
+    <header class="encabezado">
+        <a class="marca" href="../index.html">🍰 Dulce Conexión</a>
+        <a class="volver" href="../index.html">Volver al inicio</a>
+    </header>
+
+    <main class="contenedor">
+        <section class="panel">
+            <p class="sobrelinea">Para emprendedores locales</p>
+            <h1>Publicá tu producto</h1>
+            <p class="introduccion">Completá los datos para sumarlo al catálogo y que tus clientes puedan contactarte.</p>
+
+            <form id="formulario-producto">
+                <label for="titulo">Nombre del producto</label>
+                <input id="titulo" name="titulo" type="text" maxlength="100" placeholder="Ej.: Alfajores artesanales" required>
+
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" name="descripcion" rows="4" maxlength="500" placeholder="Contá qué lo hace especial" required></textarea>
+
+                <div class="fila">
+                    <div class="campo">
+                        <label for="precioReferencia">Precio de referencia (opcional)</label>
+                        <input id="precioReferencia" name="precioReferencia" type="number" min="0" step="0.01" placeholder="Ej.: 2500">
+                    </div>
+                    <div class="campo">
+                        <label for="estado">Disponibilidad</label>
+                        <select id="estado" name="estado" required>
+                            <option value="DISPONIBLE">Disponible</option>
+                            <option value="POCAS_UNIDADES">Pocas unidades</option>
+                            <option value="AGOTADO">Agotado</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label for="emprendimiento">Nombre de tu emprendimiento</label>
+                <input id="emprendimiento" name="emprendimiento" type="text" maxlength="100" placeholder="Ej.: Panadería de Ana" required>
+
+                <label for="whatsappNumber">WhatsApp de contacto</label>
+                <input id="whatsappNumber" name="whatsappNumber" type="tel" inputmode="tel" minlength="8" maxlength="24" placeholder="Ej.: +54 9 264 123 4567" aria-describedby="ayuda-whatsapp" required>
+                <small id="ayuda-whatsapp">Incluí el código de país y de área para que puedan escribirte.</small>
+
+                <button id="boton-publicar" type="submit">Publicar producto</button>
+                <p id="estado-formulario" class="mensaje" role="status" aria-live="polite"></p>
+                <a id="enlace-catalogo" class="enlace-catalogo" href="../index.html#productos" hidden>Ver el producto en el catálogo</a>
+            </form>
+
+            <p class="nota">El catálogo guarda tus publicaciones en el backend local del proyecto. Para que otros puedan verlas, el backend debe estar en ejecución.</p>
+        </section>
+    </main>
+
+    <script src="publicar_productos.js"></script>
+</body>
+</html>

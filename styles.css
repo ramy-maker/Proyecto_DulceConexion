@@ -78,12 +78,56 @@ nav a:hover {
     cursor: pointer;
 
     transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
 }
 
 
 .btn-publicar:hover {
     background-color: #b8522c;
     transform: translateY(-2px);
+}
+
+.api-status {
+    grid-column: 1 / -1;
+    color: #6b5149;
+    font-size: 14px;
+    min-height: 1.5em;
+    margin-top: 16px;
+}
+
+.api-status--error {
+    color: #a43125;
+}
+
+.api-status--success {
+    color: #287a43;
+}
+
+.producto-imagen-placeholder {
+    display: grid;
+    place-items: center;
+    font-size: 64px;
+}
+
+.producto-emprendimiento {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.producto-footer a {
+    border: none;
+    background-color: #f4a261;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.producto-footer a:hover {
+    background-color: #d2693c;
 }
 
 
@@ -158,6 +202,10 @@ nav a:hover {
     font-size: 15px;
 
     transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 
 }
 
@@ -182,6 +230,10 @@ nav a:hover {
     color: #d2693c;
 
     border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 
     font-family: "Poppins";
 
@@ -391,6 +443,10 @@ nav a:hover {
 
     font-size: 12px;
 
+}
+
+.disponible--agotado {
+    color: #a43125;
 }
 
 

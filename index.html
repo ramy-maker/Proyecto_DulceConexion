@@ -6,7 +6,7 @@
 
     <title>Dulce Conexión</title>
 
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -27,9 +27,9 @@
             <a href="#nosotros">Nosotros</a>
         </nav>
 
-        <button class="btn-publicar">
+        <a class="btn-publicar" href="ayuda_cliente/publicar_productos.html">
             Publicar productos
-        </button>
+        </a>
 
     </header>
 
@@ -57,9 +57,9 @@
                     Ver productos
                 </button>
 
-                <button class="btn-secundario">
+                <a class="btn-secundario" href="#emprendedores">
                     Conocer emprendedores
-                </button>
+                </a>
 
             </div>
 
@@ -139,7 +139,7 @@
                     <div class="producto-footer">
 
                         <strong>$ Consultar</strong>
-                        <a href="/productos/facturas.html">
+                        <a href="productos/facturas.html">
                         <button>
                             Ver más
                         </button>
@@ -174,7 +174,7 @@
                     <div class="producto-footer">
 
                         <strong>$ Consultar</strong>
-                        <a href="/productos/semitas.html">
+                        <a href="productos/semitas.html">
                         <button>
                             Ver más
                         </button>
@@ -209,7 +209,7 @@
                     <div class="producto-footer">
 
                         <strong>$ Consultar</strong>
-                        <a href="/productos/tortas.html">
+                        <a href="productos/tortas.html">
                         <button>
                             Ver más
                         </button>
@@ -244,7 +244,7 @@
                     <div class="producto-footer">
 
                         <strong>$ Consultar</strong>
-                        <a href="/productos/galletas.html">
+                        <a href="productos/galletas.html">
                         <button>
                             Ver más
                         </button>
@@ -256,6 +256,8 @@
             </div>
 
         </div>
+
+        <p class="api-status" id="productos-api-status" role="status" aria-live="polite"></p>
 
     </section>
 
@@ -331,9 +333,9 @@
                 de tu comunidad.
             </p>
             
-            <button class="btn-principal">
+            <a class="btn-principal" href="ayuda_cliente/publicar_productos.html">
                 Quiero publicar mis productos
-            </button>
+            </a>
 
         </div>
 
@@ -403,5 +405,6 @@
     </footer>
 
 
+    <script src="scripts/productos.js"></script>
 </body>
 </html>
