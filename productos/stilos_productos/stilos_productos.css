@@ -147,3 +147,25 @@ hr {
     background-color: #b8522c;
     transform: translateY(-2px);
 }
+
+
+nav a.btn-volver {
+    text-decoration: none;         /* Quita el subrayado azul feo */
+    color: #d2693c;                 /* Color del texto (naranja del sitio) */
+    background-color: #fff1e8;      /* Fondo suave */
+    border: 2px solid #d2693c;      /* Borde fino y elegante */
+    padding: 8px 18px;              /* Espacio interno para darle forma de botón */
+    border-radius: 20px;            /* Bordes redondeados */
+    font-weight: 600;               /* Texto un poco más grueso */
+    font-size: 14px;
+    display: inline-block;          /* Permite aplicar márgenes y rellenos correctamente */
+    transition: all 0.3s ease;      /* Transición suave para cuando pasas el mouse */
+}
+
+/* Efecto al pasar el puntero por encima */
+nav a.btn-volver:hover {
+    background-color: #d2693c;      /* El fondo cambia a naranja */
+    color: #ffffff;                 /* El texto cambia a blanco */
+    transform: translateY(-2px);    /* Se eleva sutilmente */
+    box-shadow: 0 4px 10px rgba(210, 105, 60, 0.2); /* Sombra suave */
+}
