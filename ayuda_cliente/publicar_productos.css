@@ -146,6 +146,17 @@ form button:disabled {
     opacity: 0.7;
 }
 
+.boton-cancelar {
+    margin-top: 0;
+    border: 1px solid #d2693c;
+    background: #fff;
+    color: #a44825;
+}
+
+.boton-cancelar:hover {
+    background: #fff1e8;
+}
+
 .mensaje {
     margin: 2px 0 0;
     line-height: 1.5;
@@ -162,6 +173,109 @@ form button:disabled {
 .enlace-catalogo {
     color: #a44825;
     font-weight: 700;
+}
+
+.gestion-productos {
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid #f0e4dd;
+}
+
+.gestion-productos h2 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.gestion-ayuda {
+    margin: 8px 0 14px;
+    color: #6b5149;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.lista-productos {
+    display: grid;
+    gap: 12px;
+}
+
+.producto-admin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #f0e4dd;
+    border-radius: 14px;
+    background: #fffdfc;
+}
+
+.producto-admin-info {
+    min-width: 0;
+}
+
+.producto-admin-info h3 {
+    margin: 0;
+    overflow-wrap: anywhere;
+    font-size: 16px;
+}
+
+.producto-admin-info p {
+    margin: 5px 0 0;
+    overflow-wrap: anywhere;
+    color: #6b5149;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.producto-admin-estado {
+    font-weight: 700;
+}
+
+.producto-admin-estado--agotado {
+    color: #a43125;
+}
+
+.producto-admin-acciones {
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.producto-admin-acciones button {
+    min-height: 38px;
+    margin: 0;
+    padding: 8px 12px;
+    border: 1px solid #d2693c;
+    border-radius: 20px;
+    background: #fff;
+    color: #a44825;
+    cursor: pointer;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.producto-admin-acciones button:hover {
+    background: #fff1e8;
+}
+
+.producto-admin-acciones button[data-accion="estado"] {
+    border-color: #3ca65c;
+    color: #287a43;
+}
+
+.producto-admin-acciones button[data-accion="estado"]:hover {
+    background: #eff9f1;
+}
+
+.producto-admin-acciones button[data-accion="eliminar"] {
+    border-color: #a43125;
+    color: #a43125;
+}
+
+.producto-admin-acciones button[data-accion="eliminar"]:hover {
+    background: #fff0ed;
 }
 
 .nota {
@@ -185,5 +299,10 @@ form button:disabled {
     .fila {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+
+    .producto-admin {
+        align-items: flex-start;
+        flex-direction: column;
     }
 }

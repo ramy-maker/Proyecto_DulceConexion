@@ -130,6 +130,19 @@ nav a:hover {
     background-color: #d2693c;
 }
 
+.producto-footer .producto-agotado {
+    display: inline-block;
+    background-color: #f1e6e1;
+    color: #8a3329;
+    cursor: not-allowed;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.producto-footer .producto-agotado:hover {
+    background-color: #f1e6e1;
+}
+
 
 /* =========================
    HERO

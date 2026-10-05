@@ -49,9 +49,17 @@
                 <small id="ayuda-whatsapp">Incluí el código de país y de área para que puedan escribirte.</small>
 
                 <button id="boton-publicar" type="submit">Publicar producto</button>
+                <button id="boton-cancelar-edicion" class="boton-cancelar" type="button" hidden>Cancelar edición</button>
                 <p id="estado-formulario" class="mensaje" role="status" aria-live="polite"></p>
                 <a id="enlace-catalogo" class="enlace-catalogo" href="../index.html#productos" hidden>Ver el producto en el catálogo</a>
             </form>
+
+            <section class="gestion-productos" aria-labelledby="titulo-gestion">
+                <h2 id="titulo-gestion">Mis productos publicados</h2>
+                <p class="gestion-ayuda">Editá los datos, cambiá la disponibilidad o eliminá los productos que ya no quieras publicar.</p>
+                <p id="estado-gestion" class="mensaje" role="status" aria-live="polite"></p>
+                <div id="lista-productos" class="lista-productos"></div>
+            </section>
 
             <p class="nota">El catálogo guarda tus publicaciones en el backend local del proyecto. Para que otros puedan verlas, el backend debe estar en ejecución.</p>
         </section>

@@ -71,8 +71,15 @@ function crearTarjeta(producto) {
         }).format(producto.precioReferencia);
     pie.append(crearElemento("strong", "", precio));
 
-    const boton = crearElemento("a", "", imagen?.detalle ? "Ver más" : "Contactar");
-    if (imagen?.detalle) {
+    const estaAgotado = producto.estado === "AGOTADO";
+    const boton = crearElemento(
+        estaAgotado ? "span" : "a",
+        estaAgotado ? "producto-agotado" : "",
+        estaAgotado ? "Agotado" : imagen?.detalle ? "Ver más" : "Contactar"
+    );
+    if (estaAgotado) {
+        boton.setAttribute("role", "status");
+    } else if (imagen?.detalle) {
         boton.href = imagen.detalle;
     } else if (producto.whatsappNumber) {
         boton.href = `https://wa.me/${String(producto.whatsappNumber).replace(/\D/g, "")}`;
