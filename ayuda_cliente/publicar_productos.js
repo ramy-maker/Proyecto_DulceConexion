@@ -1,4 +1,5 @@
 const API_PRODUCTOS = "https://backend-a9wp.onrender.com/api/productos";
+const PRODUCTOS_INICIALES_NO_ELIMINABLES = new Set([1, 2, 3, 4]);
 
 const formulario = document.querySelector("#formulario-producto");
 const mensaje = document.querySelector("#estado-formulario");
@@ -79,7 +80,10 @@ function crearFilaProducto(producto) {
     botonEliminar.setAttribute("aria-label", `Eliminar ${producto.titulo}`);
     botonEliminar.addEventListener("click", () => eliminarProducto(producto));
 
-    acciones.append(botonEditar, botonEstado, botonEliminar);
+    acciones.append(botonEditar, botonEstado);
+    if (!PRODUCTOS_INICIALES_NO_ELIMINABLES.has(Number(producto.id))) {
+        acciones.append(botonEliminar);
+    }
     fila.append(informacion, acciones);
     return fila;
 }
