@@ -1,4 +1,4 @@
-const API_PRODUCTOS = "http://localhost:8080/api/productos";
+const API_PRODUCTOS = "https://backend-a9wp.onrender.com/api/productos";
 const grillaProductos = document.querySelector(".productos-grid");
 const estadoCatalogo = document.querySelector("#productos-api-status");
 
@@ -113,7 +113,7 @@ async function cargarProductos() {
         estadoCatalogo.className = "api-status api-status--success";
     } catch (error) {
         console.error("No se pudo cargar el catálogo:", error);
-        estadoCatalogo.textContent = "No se pudo conectar con el catálogo. Iniciá el backend Spring en el puerto 8080 para ver las publicaciones actualizadas.";
+        estadoCatalogo.textContent = "No se pudo conectar con el catálogo publicado. Intentá nuevamente más tarde.";
         estadoCatalogo.className = "api-status api-status--error";
     }
 }

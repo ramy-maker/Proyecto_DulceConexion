@@ -1,4 +1,4 @@
-const API_PRODUCTOS = "http://localhost:8080/api/productos";
+const API_PRODUCTOS = "https://backend-a9wp.onrender.com/api/productos";
 
 const formulario = document.querySelector("#formulario-producto");
 const mensaje = document.querySelector("#estado-formulario");
